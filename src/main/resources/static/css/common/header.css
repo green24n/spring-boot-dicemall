@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@600&family=Roboto&display=swap');
+*{padding: 0; margin:0; box-sizing: border-box;}
+*{font-family: 'Noto Sans KR', 'Roboto'; color: black;}
+a{color:black; text-decoration: none;}
+h1{position: absolute; left: -9999px;}
+
+li{list-style: none;}
+#h-1{padding-bottom: 10px;
+margin-bottom: 10px;}
+.favorite{margin-right: 32px;}
+.com{margin-right: 32px;}
+.board{margin-right: 32px;}
+.login{margin-right: 32px;}
+.sign{margin-right: 32px;}
+.cons{margin-right: 32px;}
+.view-size{width:1200px; margin:0 auto;}
+.flex{display: flex;
+	padding-top: 2px;}
+.center{justify-content: center;}
+.between{justify-content: space-between;}
+.start{justify-content: start;}
+.cend{justify-content: end;}
+.headerul{margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    display: flex;
+    justify-content: space-between;}
+input{width: 500px; height: 40px;
+	border: 5px solid greenyellow;
+	border-radius: 15px;
+	}
+.searchimg{width: 40px;
+			position: absolute;
+			}
+.imgf{margin-right: 20px;}
+.wrap-view-size{width: 1200px; margin:0 auto;}
+.shop{text-align: center; 
+	font-size: 40px; 
+	background-color: black;}
+.white{color: white;
+	 padding-bottom: 10px;
+	 word-spacing: 10px;
+	 letter-spacing: 5px;}
+ul.a{padding-bottom: 10px;}
+.headerul2{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	height: 56px;
+	align-items: center;
+	padding: 0px 400px;
+	border: 1px solid #d9d9d9;
+}
+.headerul2 a{
+	padding: 16px;
+}
+#modal {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(246, 247, 251, .7);
+  display: none;
+}
+.modal-1 {
+    width: 330px;
+    height: 520px;
+    border: 3px solid #d9d9d9;
+    padding: 40px 40px 32px 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 200px;
+    left: 43%;
+}
+.closeimg{
+	width: 35px;
+}
+#close-modal{
+	position: absolute;
+	top: 30px;
+	right: 35px;
+}
+.loginlogo{
+	position: absolute;
+	width: 150px;
+	height: 50px;
+	left: 80px;
+}
+.modal-1 input{
+	width: 241px;
+	height: 44px;
+}
+.modal-1 ul{
+	position: absolute;
+	top: 20%;
+}
+.loginbox{
+	width: 241px;
+	height: 44px;
+	background-color: greenyellow;
+	border: none;
+}
+.logina{
+	font-size: 12px;
+}
+.logina2{
+	padding: 0px 0px 0px 44px;
+	font-size: 12px;
+}
+.or{
+	width: 241px;
+	margin-top: 17px;
+}
+.nologin{
+	margin-top: 40px;
+	width: 241px;
+	height: 44px;
+	background-color: black;
+	color: antiquewhite;
+	border: none;
+}
+.hover:hover{
+	display: inline-block;
+}
+.dropmenu{
+	display: none;
+}
+.dropmenu a{
+	z-index: 1;
+	display: block;
+}
+.hover:hover .dropmenu{
+	display: block;
+	background-color: black;
+}
+.hover:hover .dropmenu a{
+	color: #d9d9d9;
+}
+.hover:hover .hovera{
+	display: inline-block;
+	padding-top: 632px;
+}
+form input {
+	padding-left: 10px;
+}
+form button{
+	cursor: pointer;
+}
+.dropmenu a:hover{
+	color: black;
+}

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+main {
+	display: flex;
+	justify-content: center;
+	justify-items: center;	
+    flex-direction: column;	
+    align-items: center;
+    height: 900px;	
+}
+.signupimg {
+	margin-left: 58px;
+}
+/*.signup-conteiner{
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+    align-items: center;	
+}*/
+.inputs {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+    flex-direction: column;	
+    align-items: center;	
+}
+
+.formlist {
+	width: auto;
+	height: auto;
+	display: flex;
+    flex-direction: column;	
+	border: solid 1px gray;
+	margin: 5px;
+  transition: outline 1s ease;
+}
+.input {
+	width: 360px;
+	height: 40px;
+	border: none;
+	outline: none;
+}
+.formlist2:not(:last-of-type) {
+	border-bottom: 1px solid gray;
+}
+.formlist2{
+	width: 415px;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+}
+.imgs {
+	width: 30px;
+	padding-right: 10px;
+	opacity: 0.4;
+}
+/*.signup-container > .inputs > .formlist > .input:focus {
+  border: 2px solid #0000ff;
+  background-color: rgb(147, 255, 147); 
+}*/
+#formbutton {
+	margin-top: 15px;
+	width: 365px;
+	height: 55px;
+	border: none;
+	background-color: darkgreen;
+	color: azure;
+	font-size: 18px;
+	cursor: pointer;
+}

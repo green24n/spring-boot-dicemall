@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<th:block th:fragment="common-head">
+		<meta charset="UTF-8">
+		<title>My layout</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="/css/common/common.css" />
+		<link rel="stylesheet" href="/css/common/header.css" />
+		<link rel="stylesheet" href="/css/common/footer.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto&display=swap" rel="stylesheet">
+
+	</th:block>
+	<header>
+		<h1>헤더섹션</h1>
+		<div class="wrap">
+			<section id="h-1">
+				<h1>1</h1>
+				<div class="wrap view-size flex between">
+					<ul class="flex">
+						<li class="favorite"><a href="#">즐겨찾기</a></li>
+						<li class="com"><a href="#">회사안내</a></li>
+						<li class="board"><a href="#">보드엠팩토리</a></li>
+					</ul>
+					<ul class="flex">
+						<li class="login"><a href="#" id="open-modal">로그인</a></li>
+						<li class="sign"><a href="/signup03">회원가입</a></li>
+						<li class="cons"><a href="/help">고객센터</a></li>
+					</ul>
+				</div>
+			</section>
+			<section id="h-2">
+				<h1>1</h1>
+				<div class="wrap-view-size">
+					<ul class="headerul">
+						<li>
+							<a href="/">
+								<img src="img/1698737654791.png" width="120px">
+							</a>
+						</li>
+						<li class="search">
+							<input>
+							<a href="#">
+								<img class="searchimg" src="img/ssearch.svg">
+							</a>
+						</li>
+						<li class="img1">
+							<a href="#">
+								<img class="imgf" src="img/pperson.svg" width="40px">
+							</a>
+							<a href="#">
+								<img src="img/sshoping.svg" width="40px">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="h-3">
+				<h1>1</h1>
+				<div class="wrap-view-size1">
+					<ul class="shop">
+						<li class="white">PLAY YOUR WORLD</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<h1>1</h1>
+				<div class="menu3"></div>
+					<ul class="headerul2">
+						<li>
+							<div class="hover">
+								<a class="hovera" href="#">SHOP 카테고리</a>
+						<!--			hovermenu			-->
+								<div class="dropmenu">
+									<a href="#">보드게임</a>
+									<a href="#">이벤트/특가</a>
+									<a href="#">퍼즐</a>
+									<a href="#">토이</a>
+									<a href="#">큐브</a>
+									<a href="#">십자수</a>
+									<a href="#">DIY페인팅</a>
+									<a href="#">신규 입고</a>
+									<a>----------------</a>
+									<a href="#">펀딩/선주문</a>
+									<a href="#">보드게임영상</a>
+								</div>
+						<!--			hovermenu			-->
+							</div>
+						</li>
+						<li><a href="#">펀딩/선주문</a></li>
+						<li><a href="#">신규입고</a></li>
+						<li><a href="#">퍼즐</a></li>
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">보드게임 영상</a></li>
+						<li><a href="#">창고 할인</a></li>
+					</ul>
+			</section>
+		</div>
+					<!--			로그인 창				-->
+		<div id="modal">
+			<div class="modal-1">
+				<a href="#" id="close-modal"><img class="closeimg" src="img/close.svg"></a>
+				<img class="loginlogo" src="img/1698737654791.png">
+				<form action="/" method="post">
+					<ul>
+						<li><input type="text" name="id" placeholder="아이디"></li>
+						<br>
+						<li><input type="password" name="pass" placeholder="비밀번호"></li>
+						<br>
+						<button type="submit" class="loginbox">로그인</button>
+						<br>
+						<br>
+						<a class="logina" href="/signup03">보드엠 회원가입></a>
+						<a class="logina2" href="#">아이디/비밀번호 찾기</a>
+						<img class="or" src="img/login_or_line.png">
+						<button type="submit" class="nologin">비회원으로 주문하기</button>
+					</ul>
+				</form>
+			</div>
+			<script>
+				const modal = document.getElementById("modal");
+				const openModalBtn = document.getElementById("open-modal");
+				const closeModalBtn = document.getElementById("close-modal");
+				openModalBtn.addEventListener("click", () => {
+  				modal.style.display = "block";});
+				closeModalBtn.addEventListener("click", () => {
+ 				modal.style.display = "none";});
+			</script>
+		</div>
+					<!--			로그인 창				-->
+	</header>
+	<!--==============================================-->
+	<!--==============================================-->
+	<footer>
+		<h1>푸터섹션</h1>
+		<div>
+			<nav id="bbb">
+				<li class="aaa"><a href="">홈</a></li>
+				<div class="extra_line"></div>
+				<li class="aaa"><a href="">회사소개</a></li>
+				<div class="extra_line"></div>
+				<li class="aaa"><a href="">이용약관</a></li>
+				<div class="extra_line"></div>
+				<li class="aaa"><a href="">개인정보취급방침</a></li>
+				<div class="extra_line"></div>
+				<li class="aaa"><a href="">이용안내</a></li>
+				<div class="extra_line"></div>
+				<li class="aaa"><a href="">고객센터</a></li>
+			</nav>
+			<ul>
+				<li class="copyright_info">주식회사 dicemall</li>
+				<li class="copyright_info">070-7720-0145</li>
+				<li class="copyright_info">대표:유재혁 사업자등록번호: [000-00-00000]</li>
+				<li class="copyright_info">전화번호:000-0000-0000 	(오전10시-오후3시) 팩스번호:02-6937-0145 주소:경기 고양시 덕양구 향동로 201 GL메트로시티813호</li>
+				<li class="copyright_info">개인정보관리자:구민주 통신판매업번호:제 2020-고양덕양구-1424호</li>
+				<li class="copyright_info">Contact 메일: settler@boardm.co.kr for more information.</li>
+				<li class="copyright_info">ⓒ 2023 boardm. All rights reserved designed & managed by ZNS.</li>
+			</ul>
+			
+		</div>
+		<div class="wrap"></div>
+	</footer>
+</html>

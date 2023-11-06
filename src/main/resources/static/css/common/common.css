@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/*1200px 가운데정렬*/
+
+/**{padding: 0;}
+body{font-family: 'Noto Sans KR','Roboto'; color: black;}
+h1{position: absolute; left: -99999px;}
+li{list-style: none;}
+.view-size{width: 1200px; margin: 0 auto}
+.flex{display: flex}
+.between{justify-content: center;}
+.center{justify-content: center}
+.start{justify-content: start}
+.end{justify-content: end;} */
+
+.mainsize {
+	width: 500px;
+	height: 600px;
+	background-color: gray;
+}
+main {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+}

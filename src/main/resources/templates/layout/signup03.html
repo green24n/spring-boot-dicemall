@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/css/signup/signup03.css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<main>
+		<div class="signup-container">
+			<a href="/"><img class="signupimg" src="/img/1698737654791.png" width="300px"></a>
+			<h3>가입정보입력</h3>
+			<form action="" method="post" class="inputs">
+				<div class="formlist">
+					<div class="formlist2">
+						<img src="/img/email.svg" class="imgs" alt="email-icon" />
+						<input type="text" name="emailid" placeholder="이메일(아이디)" class="input"/>
+					</div>
+					<div class="formlist2">
+						<img src="/img/lock.svg" class="imgs" alt="lock-icon" />
+						<input type="password" name="password" placeholder="비밀번호" class="input"/>
+					</div>
+					<div class="formlist2">
+						<img src="/img/lockcheck.svg" class="imgs" alt="lockcheck-icon" />
+						<input type="password" name="password" placeholder="비밀번호확인" class="input"/>
+						</div>
+				</div>                                                                                                   
+				<div class="formlist">                                                                                   
+					<div class="formlist2">
+						<img src="/img/person.svg" class="imgs" alt="person-icon" />
+						<input type="text" name="username" placeholder="이름" class="input"/>
+					</div>         
+					<div class="formlist2">
+						<img src="/img/phone.svg" class="imgs" alt="phone-icon" />
+						<input type="text" name="username" placeholder="전화번호" class="input"/>
+					</div>     
+				</div>                                                                                                   
+				<div>
+					<input type="submit" value="가입신청" id="formbutton">
+				</div>
+			</form>
+		</div>
+		<script>
+			$(document).ready(function() {
+			  $('.input').focus(function() {
+			    // 원래 스타일 백업
+			    var originalOutline = $(this).closest('.formlist2').css('outline');
+			    // 스타일 변경
+			    $(this).closest('.formlist2').css('outline', '3px solid green');
+			
+			    // 포커스 해제 시 원래 스타일로 복원
+			    $(this).blur(function() {
+			      $(this).closest('.formlist2').css('outline', originalOutline);
+			    });
+			  });
+			});
+		</script>
+	</main>
+</body>
+</html>
