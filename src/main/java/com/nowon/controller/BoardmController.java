@@ -20,7 +20,6 @@ public class BoardmController {
 	}
 	@GetMapping ("/help")
 	public String help() {
-		return "front/help/help.html";
+		return "front/help/help";
 	}
-	
 }
