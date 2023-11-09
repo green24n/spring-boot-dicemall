@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{layout/common-layout :: commonLayout(~{this::head},~{this::main} )}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/css/shoppingbasket/shoppingbasket.css">
+</head>
+<body>
+	<main class="bmain">
+		<div class="bmain1">
+			<div class="basket">
+				장바구니<br>
+				<br>
+				<div class="goods">
+					장바구니에 담긴 상품이 없어요.
+				</div>
+			</div>
+			<div class="bcash">
+				<div class="bcash1">
+					<div>상품금액</div>
+					<div><span>0</span> 원</div>
+				</div>
+				<div class="bcash1">
+					<div>배송비</div>
+					<div>+ 0 원</div>
+				</div>
+				<div class="bcash2">
+					<div>결제 예정 금액</div>
+					<div><span>0</span> 원</div>
+				</div>
+				<div class="bcash1">
+					<div>적립예정 포인트</div>
+					<div>0P</div>
+				</div>
+			<div>
+				<button>주문하기 (0)</button>
+			</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
