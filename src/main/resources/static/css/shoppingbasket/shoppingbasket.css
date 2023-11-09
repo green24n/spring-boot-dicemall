@@ -1,0 +1,60 @@
+@charset "UTF-8";
+.basket{
+	justify-content: center;
+	margin-left : 365px;
+	margin-right: 40px;
+	margin-top: 50px;
+}
+.bmain{
+	display: inline;
+	justify-content: center;
+}
+.goods{
+	border: 1px solid #a0a0a0;
+	width: 890px;
+	height: 242px;
+	border-left: none;
+	border-right: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bmain1{
+	display: flex;
+}
+.bcash{
+	margin-top: 98px;
+	width: 273px;
+	height: 280px;
+	border: 1px solid #a0a0a0;
+	border-radius: 15px;
+	padding: 24px;
+	}
+.bcash1{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 12px;
+}
+.bcash2{
+	display: flex;
+	margin-bottom: 12px;
+	justify-content: space-between;
+	margin-top: 12px;
+	padding-top:20px;
+	border-top: 1px solid #eaeaea;
+}
+.bcash button{
+	color: white;
+	font-weight: bold;
+	font-size: 17px;
+	border-radius: 10px;
+	border: none;
+	background-color: #a6a9d7;
+	margin-top: 15px;
+	width: 100%;
+	height: 50px;
+}
+.bmain1 span{
+	font-size: 17px;
+	font-weight: bold;
+}
