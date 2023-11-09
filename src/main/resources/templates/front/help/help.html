@@ -1,18 +1,106 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" th:replace="~{layout/common-layout :: commonLayout(~{this::head},~{this::main} )}">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="/css/help/help.css">
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="/css/help/help.css">
+	<script>
+		$(function(){
+			$(".list3").click(clickedBtnFContent);
+			$(".list2").click(clickedBtnBGcolor);
+		});
+		
+		///////////////
+		
+		function clickedBtnFContent() {
+			$(this).siblings('.faq_content').slideToggle(0);
+		}
+		function clickedBtnBGcolor() {
+			$(".list2").css("background-color","#dddddd");
+			$(this).css("background-color", "white");
+		}
+	</script>
 </head>
 <body>
 	<main>
-		<div>
-			<p>qna1</p>
-		</div>
-		<div>
-			<div>qna2</div>
-			<div>qna3</div>
+		<div class="qnamain mid">
+			<div class="qna1">
+				<p id="qnamainp">FAQ검색</p>
+				<div id="qnamainsearch">
+					<p>검색을 이용하시면 보다 빠르게 원하시는 답변을 얻으실 수 있습니다.</p>
+					<input type="search" placeholder="검색 후 문의가 해결되지 않으면 1:1상담을 이용하세요."/>
+				</div>
+			</div>
+			<div class="qna2">
+				<div id="qnaboard">
+					<ul>
+						<li><a class="list" href="#">FAQ</a></li>
+						<li><a class="list" href="#">1:1문의</a></li>
+						<li><a class="list" href="#">A/S</a></li>
+						<li><a class="list" href="#">공지사항</a></li>
+					</ul>
+				</div>
+				<div id="qnalist1">
+					<div>
+						<ul class="row">
+							<li><a class="list2 mid" href="#">전체</a></li>
+							<li><a class="list2 mid" href="#">회원가입/정보</a></li>
+							<li><a class="list2 mid" href="#">결제/배송</a></li>
+							<li><a class="list2 mid" href="#">교환/반품/환불</a></li>
+							<li><a class="list2 mid" href="#">마일리지적립</a></li>
+							<li><a class="list2 mid" href="#">오류문의</a></li>
+							<li><a class="list2 mid" href="#">기타</a></li>
+						</ul>
+					</div>
+					
+					<div>
+						<ul id="qnalist2">
+							<li>
+								<div class="list3">
+									<div class="faq_content_cate mid">결제/배송</div><p>회원가입정보</p><img src="/img/help/arrow_down.svg">
+								</div>
+								<div class="faq_content">컨텐츠</div>
+							</li>
+							<li>
+								<div class="list3">
+									<div class="faq_content_cate mid">결제/배송</div><p>회원가입정보</p><img src="/img/help/arrow_down.svg">
+								</div>
+								<div class="faq_content">컨텐츠</div>
+							</li>
+							<li>
+								<div class="list3">
+									<div class="faq_content_cate mid">결제/배송</div><p>회원가입정보</p><img src="/img/help/arrow_down.svg">
+								</div>
+								<div class="faq_content">컨텐츠</div>
+							</li>
+							<li>
+								<div class="list3">
+									<div class="faq_content_cate mid">결제/배송</div><p>회원가입정보</p><img src="/img/help/arrow_down.svg">
+								</div>
+								<div class="faq_content">컨텐츠</div>
+							</li>
+							<li>
+								<div class="list3">
+									<div class="faq_content_cate mid">결제/배송</div><p>회원가입정보</p><img src="/img/help/arrow_down.svg">
+								</div>
+								<div class="faq_content">컨텐츠</div>
+							</li>
+							<li>
+								<div class="list3">
+									<div class="faq_content_cate mid">결제/배송</div><p>회원가입정보</p><img src="/img/help/arrow_down.svg">
+								</div>
+								<div class="faq_content">컨텐츠</div>
+							</li>
+							<li>
+								<div class="list3">
+									<div class="faq_content_cate mid">결제/배송</div><p>회원가입정보</p><img src="/img/help/arrow_down.svg">
+								</div>
+								<div class="faq_content">컨텐츠</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
 </body>
