@@ -6,12 +6,19 @@
 <link rel="stylesheet" href="/css/showlist/showlist01.css">
 		<script>
 			$(document).ready(function() {
-				$("#showright").click(function() {
-					var currentMarginLeft = parseInt($("#showslide").css("margin-left"), 10);
-			        var newMarginLeft = currentMarginLeft - 300; // 원하는 이동 거리를 설정
+			    $("#showright").click(function() {
+			        var currentMarginLeft = parseInt($("#showslide").css("margin-left"), 10);
+			        var newMarginLeft = currentMarginLeft - 600;
 			
 			        $("#showslide").animate({ marginLeft: newMarginLeft }, 500);
-				});
+			    });
+			
+			    $("#showleft").click(function() {
+			        var currentMarginLeft = parseInt($("#showslide").css("margin-left"), 10);
+			        var newMarginLeft = currentMarginLeft + 600;
+			
+			        $("#showslide").animate({ marginLeft: newMarginLeft }, 500);
+   				});
 			});
 		</script>
 </head>
@@ -20,11 +27,11 @@
 		<div id="showlistmain mid column">
 			<h2>보드게임</h2>
 			<div id="showbox">
-				<div>
+				<div class="mid">
 					<div>인기추천</div>
 					<div>베스트</div>
 				</div>
-				<div>
+				<div class="mid column">
 					<div id="showwindow">
 						<ul id="showslide">
 							<li class="goods">
@@ -51,13 +58,154 @@
 									<p>[가격]</p>
 								</div>
 							</li>
+							<li class="goods">
+								<img src="/img/showlist/showlistimg.png" width="200px">
+								<div>
+									<p>[제조사명]</p>
+									<p>[상품이름]</p>
+									<p>[가격]</p>
+								</div>
+							</li>
+							<li class="goods">
+								<img src="/img/showlist/showlistimg.png" width="200px">
+								<div>
+									<p>[제조사명]</p>
+									<p>[상품이름]</p>
+									<p>[가격]</p>
+								</div>
+							</li>
+							<li class="goods">
+								<img src="/img/showlist/showlistimg.png" width="200px">
+								<div>
+									<p>[제조사명]</p>
+									<p>[상품이름]</p>
+									<p>[가격]</p>
+								</div>
+							</li>
+							<li class="goods">
+								<img src="/img/showlist/showlistimg.png" width="200px">
+								<div>
+									<p>[제조사명]</p>
+									<p>[상품이름]</p>
+									<p>[가격]</p>
+								</div>
+							</li>
+							<li class="goods">
+								<img src="/img/showlist/showlistimg.png" width="200px">
+								<div>
+									<p>[제조사명]</p>
+									<p>[상품이름]</p>
+									<p>[가격]</p>
+								</div>
+							</li>
 						</ul>
 					</div>
-					<div>
-						<button id="showleft">왼쪽</button>
-						<button id="showright">오른쪽</button>
+					<div id="allows">
+						<div id="showleft"><img width="40px" src="/img/showlist/right_fillo.svg"> </div>
+						<div id="showright"><img width="40px" src="/img/showlist/right_fillo.svg"> </div>
 					</div>
 				</div>
+			</div>
+			
+			<div id="showlist02">
+				<ul class="goodbox02">
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+					<li class="goods02">
+						<img src="/img/showlist/showlistimg.png" width="200px">
+						<div>
+							<p>[제조사명]</p>
+							<p>[상품이름]</p>
+							<p>[가격]</p>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</main>
