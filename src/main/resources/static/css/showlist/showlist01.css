@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.mid {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+}
+.column {
+	flex-direction: column;
+}
+
+#showslide {
+	display: flex;
+	position: absolute;
+	flex-direction: row;
+}
+#showbox {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+	flex-direction: column;
+}
+.goods {
+	width: 200px;
+	height: 300px;
+	border: 1px solid darkgoldenrod;
+}
+#showwindow {
+	height: 300px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{layout/common-layout :: commonLayout(~{this::head},~{this::main} )}">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/css/showlist/showlist01.css">
+		<script>
+			$(document).ready(function() {
+				$("#showright").click(function() {
+					var currentMarginLeft = parseInt($("#showslide").css("margin-left"), 10);
+			        var newMarginLeft = currentMarginLeft - 300; // 원하는 이동 거리를 설정
+			
+			        $("#showslide").animate({ marginLeft: newMarginLeft }, 500);
+				});
+			});
+		</script>
+</head>
+<body>
+	<main>
+		<div id="showlistmain mid column">
+			<h2>보드게임</h2>
+			<div id="showbox">
+				<div>
+					<div>인기추천</div>
+					<div>베스트</div>
+				</div>
+				<div>
+					<div id="showwindow">
+						<ul id="showslide">
+							<li class="goods">
+								<img src="/img/showlist/showlistimg.png" width="200px">
+								<div>
+									<p>[제조사명]</p>
+									<p>[상품이름]</p>
+									<p>[가격]</p>
+								</div>
+							</li>
+							<li class="goods">
+								<img src="/img/showlist/showlistimg.png" width="200px">
+								<div>
+									<p>[제조사명]</p>
+									<p>[상품이름]</p>
+									<p>[가격]</p>
+								</div>
+							</li>
+							<li class="goods">
+								<img src="/img/showlist/showlistimg.png" width="200px">
+								<div>
+									<p>[제조사명]</p>
+									<p>[상품이름]</p>
+									<p>[가격]</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div>
+						<button id="showleft">왼쪽</button>
+						<button id="showright">오른쪽</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
