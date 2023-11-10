@@ -6,14 +6,11 @@
 	justify-items: center;
 	align-items: center;
 }
+.flex {
+	display: flex;
+}
 .column {
 	flex-direction: column;
-}
-
-#showslide {
-	display: flex;
-	position: absolute;
-	flex-direction: row;
 }
 #showbox {
 	display: flex;
@@ -22,11 +19,51 @@
 	align-items: center;
 	flex-direction: column;
 }
+#showwindow {
+	width: 900px;
+	height: 330px;
+	overflow: hidden;
+}
+#showslide {
+	display: flex;
+	position: relative;
+	flex-direction: row;
+}
 .goods {
 	width: 200px;
 	height: 300px;
-	border: 1px solid darkgoldenrod;
+	border-radius: 20px;
+	outline: 1px solid #333333;
+	margin: 5px;
+	
+	cursor: pointer;
 }
-#showwindow {
+.goods:hover {
+	outline: 3px solid #333333;
+}
+#allows {
+	display: flex;
+}
+#showleft, #showright {
+	cursor: pointer;
+}
+#showlist02 {
+	width: 1200px;
+	height: 1000px;
+}
+.goodbox02 {
+	display: flex;
+	flex-wrap: wrap;}
+.goods02 {
+	
+	width: 200px;
 	height: 300px;
+	margin: 10px;
+	cursor: pointer;
+	overflow: hidden;
+	background-color: #eeeeee;
+	border-radius: 20px;
+}
+.goods02>img:hover {
+	scale: 1.1;
 }
