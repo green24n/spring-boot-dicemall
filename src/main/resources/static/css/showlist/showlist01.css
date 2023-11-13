@@ -20,14 +20,16 @@
 	flex-direction: column;
 }
 #showwindow {
-	width: 900px;
+	width: 840px;
 	height: 330px;
 	overflow: hidden;
+	position: relative;
 }
 #showslide {
 	display: flex;
-	position: relative;
+	position: absolute;
 	flex-direction: row;
+	width: 100%;
 }
 .goods {
 	width: 200px;
@@ -50,6 +52,7 @@
 #showlist02 {
 	width: 1200px;
 	height: 1000px;
+	margin-top: 50px;
 }
 .goodbox02 {
 	display: flex;
