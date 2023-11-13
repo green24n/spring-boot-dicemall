@@ -1,0 +1,194 @@
+/* common.css */
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.slider-container {
+	width: 1500px;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+	margin: auto;
+}
+
+.slider {
+	display: flex;
+	width: 9000px;
+	/* 1500px * 6 slides */
+	transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+	width: 1500px;
+	height: 600px;
+}
+
+.slide>img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.prev-button,
+.next-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 50px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	color: white;
+}
+
+.prev-button {
+	left: 10px;
+}
+
+.next-button {
+	right: 10px;
+}
+
+.row-container {
+	display: flex;
+	margin-top: 20px;
+	/* 필요에 따라 여백 조절 */
+	border: none;
+}
+
+.row-container {
+	display: flex;
+	margin-top: 20px;
+	border: none;
+}
+
+.box {
+	width: 1150x;
+	height: 400px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.column {
+	width: 320px;
+	height: 400px;
+	float: left;
+	margin-right: 20px;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.sub-column {
+	width: 100%;
+	height: calc(100% / 3);
+	/* 세로로 나누어지도록 높이 조절 */
+	box-sizing: border-box;
+	float: left;
+	border: none;
+	padding: 10px;
+}
+
+.price-text {
+	color: rgb(0, 128, 255);
+	font-weight: 800;
+}
+
+.small-button {
+	font-size: 12px;
+	padding: 2px;
+	margin-right: 5px;
+	border: 1px solid rgb(206, 206, 206);
+	border-radius: 3px;
+	background-color: none;
+	cursor: pointer;
+	max-width: 90px;
+}
+
+/* 중간에 gif 광고 */
+.gameAD {
+	width: 1250x;
+	height: 400px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: -40px;
+
+}
+
+body {
+	height: 1000px;
+}
+
+
+/* 사이드 베너 광고 */
+.sideBanner {
+	position: fixed;
+	top: 50%;
+	right: 30px;
+	width: 160px;
+	height: 330px;
+	transform: translateY(-50%);
+	transition: top 0.4s ease-in-out;
+	/* 이동 애니메이션 효과 */
+}
+
+.sideBanner.scroll {
+	transition: none;
+}
+
+.sideBanner.left {
+	position: fixed;
+	top: 50%;
+	left: 30px;
+	/* 왼쪽 위치를 조절합니다 */
+	width: 160px;
+	height: 330px;
+	transform: translateY(-50%);
+	transition: top 0.4s ease-in-out;
+}
+
+.sideBanner.left.scroll {
+	transition: none;
+}
+
+
+/* 후기 평점 */
+.star-ratings {
+	color: #aaa9a9;
+	position: relative;
+	unicode-bidi: bidi-override;
+	width: max-content;
+	-webkit-text-fill-color: transparent;
+	/* Will override color (regardless of order) */
+	-webkit-text-stroke-width: 1.3px;
+	-webkit-text-stroke-color: #2b2a29;
+}
+
+.star-ratings-fill {
+	color: #fff58c;
+	padding: 0;
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	-webkit-text-fill-color: gold;
+}
+
+.star-ratings-base {
+	z-index: 0;
+	padding: 0;
+}
