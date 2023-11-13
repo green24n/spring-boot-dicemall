@@ -125,6 +125,8 @@ ul.a{padding-bottom: 10px;}
 }
 .hover:hover{
 	display: inline-block;
+	position: relative;
+	z-index: 1;
 }
 .dropmenu{
 	display: none;
