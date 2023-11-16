@@ -14,10 +14,12 @@ public class BoardmController {
 	public String signup02() {
 		return "layout/signup02";
 	}
+	/*
 	@GetMapping ("/signup03")
 	public String signup03() {
 		return "layout/signup03";
 	}
+	*/
 	@GetMapping ("/help")
 	public String help() {
 		return "front/help/help";

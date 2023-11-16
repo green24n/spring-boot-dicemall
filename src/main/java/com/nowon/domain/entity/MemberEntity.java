@@ -16,6 +16,7 @@ import javax.persistence.Id;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
+import com.nowon.domain.dto.MemberDTO;
 import com.nowon.domain.entity.MemberEntity;
 import com.nowon.security.MyRole;
 
@@ -44,7 +45,7 @@ public class MemberEntity {
 	private String pass;
 	
 	@Column(nullable = false)
-	private long phone;
+	private String phone;
 	
 	@Column(nullable = false)
 	private String name;
@@ -58,5 +59,14 @@ public class MemberEntity {
 		roles.add(role);
 		return this;
 	}
+	
+	public MemberEntity saveSignup(MemberDTO memberDTO) {
+		this.email = memberDTO.getEmail();
+		this.pass = memberDTO.getPass();
+		this.name = memberDTO.getName();
+		this.phone = memberDTO.getPhone();
+		return this;
+	}
+	
 	
 }
