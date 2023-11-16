@@ -26,4 +26,9 @@ public class SignController {
 		memsevice.save(memberDTO);
 		return "redirect:/";
 	}
+	
+	@GetMapping ("/signin")
+	public String signin() {
+		return "layout/login";
+	}
 }
